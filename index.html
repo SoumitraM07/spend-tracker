@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Spend Tracker</title>
+<meta name="description" content="Spend Tracker is a personal app that tracks my own credit card spending from my bank alert emails.">
+<link rel="icon" href="logo.png">
+<style>
+  :root { color-scheme: light dark; --bg:#f9f9f7; --card:#fcfcfb; --ink:#0b0b0b; --ink2:#52514e; --line:rgba(11,11,11,.1); --blue:#2a78d6; }
+  @media (prefers-color-scheme: dark) { :root { --bg:#0d0d0d; --card:#1a1a19; --ink:#f0efec; --ink2:#c3c2b7; --line:rgba(255,255,255,.1); --blue:#3987e5; } }
+  body { margin:0; font-family:system-ui,-apple-system,"Segoe UI",sans-serif; background:var(--bg); color:var(--ink); line-height:1.55; }
+  main { max-width:680px; margin:0 auto; padding:48px 20px 64px; }
+  header { display:flex; align-items:center; gap:16px; margin-bottom:28px; }
+  header img { width:72px; height:72px; border-radius:18px; }
+  h1 { font-size:30px; margin:0; letter-spacing:-.01em; } .tag { color:var(--ink2); margin:2px 0 0; }
+  .card { background:var(--card); border:1px solid var(--line); border-radius:16px; padding:20px 22px; margin-top:16px; }
+  h2 { font-size:17px; margin:0 0 6px; } p, li { color:var(--ink2); } ul { padding-left:20px; margin:6px 0 0; }
+  a { color:var(--blue); } footer { margin-top:28px; font-size:13px; color:var(--ink2); }
+</style>
+</head>
+<body><main>
+  <header><img src="logo.png" alt="Spend Tracker logo"><div><h1>Spend Tracker</h1><p class="tag">A personal credit card spend and budget tracker</p></div></header>
+
+  <div class="card">
+    <h2>What it is</h2>
+    <p>Spend Tracker is a private, personal app built for and used only by its owner, Soumitra Mahakul. It runs on my own computer and is not offered to the public.</p>
+  </div>
+  <div class="card">
+    <h2>What it does</h2>
+    <ul>
+      <li>Reads transaction alert emails from my banks (HDFC, ICICI, Axis) in my own Gmail account, using read-only access.</li>
+      <li>Shows my credit card spending per billing cycle, budgets, categories and recurring charges.</li>
+    </ul>
+  </div>
+  <div class="card">
+    <h2>Privacy</h2>
+    <p>Read the full <a href="privacy.html">privacy policy</a>. In short: data stays on my own device, nothing is shared or sold, and Gmail access is read-only.</p>
+  </div>
+  <footer>Contact: <a href="mailto:soumitramahakul@gmail.com">soumitramahakul@gmail.com</a></footer>
+</main></body>
+</html>
